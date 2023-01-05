@@ -1,0 +1,91 @@
+:root {
+  --clr-primary: hsl(354, 77%, 53%);
+  --clr-secondary: rgb(41, 57, 226);
+  --clr-surface: hsl(0, 0%, 8%);
+  --clr-surface-muted: hsl(0, 0%, 4%);
+  --clr-surface-bright: hsl(0, 0%, 12%);
+  --clr-text: hsl(0, 0%, 85%);
+  --clr-text-muted: hsl(0, 0%, 70%);
+  --clr-text-bright: hsl(0, 0%, 97%);
+  --gradient: linear-gradient(-45deg, var(--clr-primary), var(--clr-secondary));
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+video,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: system-ui;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  background: var(--clr-surface);
+  color: var(--clr-text);
+}
+
+section {
+  padding-block: 8rem;
+}
+
+.container {
+  width: min(100% - 3rem, 55rem);
+  margin-inline: auto;
+}
+
+.even-columns {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.site-header {
+  background-image: url("https://assets.codepen.io/308367/mountain-with-stars.jpg");
+  background-position: bottom;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  padding: 5rem;
+  min-height: 70vh;
+  position: relative;
+}
+
+.site-header-mask {
+  /*   --mask-source: url('https://assets.codepen.io/308367/mountain-mask.svg');
+  --mask-position: bottom;
+  --mask-size: cover; */
+
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 0.5);
+
+  -webkit-mask: url("https://assets.codepen.io/308367/mountain-mask.svg");
+  -webkit-mask-position: center bottom;
+  -webkit-mask-size: 100%;
+
+  mask: url("https://assets.codepen.io/308367/mountain-mask.svg");
+  mask-position: bottom;
+  mask-size: cover;
+}
+
+.site-title {
+  text-align: center;
+  font-size: clamp(4rem, 10vw + 0.5rem, 9rem);
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+  position: fixed;
+  width: 100%;
+}
