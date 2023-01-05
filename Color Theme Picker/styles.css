@@ -63,6 +63,10 @@ h3 {
   width: 1px;
 }
 
+.color-picker {
+  cursor: pointer;
+}
+
 .color-picker > fieldset {
   border: 0;
   display: flex;
@@ -71,7 +75,6 @@ h3 {
   background: #fff;
   padding: 1rem 3rem;
   margin-inline: auto;
-  cursor: pointer;
   border-radius: 0 0 1rem 1rem;
 }
 
@@ -89,7 +92,7 @@ h3 {
 }
 
 .color-picker input[type='radio']#light {
-  --radio-color: gray;
+  --radio-color: lightgray;
 }
 .color-picker input[type='radio']#pink {
   --radio-color: pink;
