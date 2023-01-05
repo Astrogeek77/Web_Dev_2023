@@ -63,7 +63,7 @@ h3 {
   width: 1px;
 }
 
-.color-picker {
+.color-picker > fieldset > input{
   cursor: pointer;
 }
 
