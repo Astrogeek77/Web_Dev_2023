@@ -1,0 +1,77 @@
+html {
+  font-size: 48px;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: burlywood;
+}
+ .box {
+  position: relative;
+  background: #1ca3ec;
+  border: 0.25rem solid #363636;
+  border-top: none;
+  box-sizing: border-box;
+  height: 12rem;
+  width: 90%;
+  max-width: 12rem;
+  outline: 0;
+  overflow: hidden;
+}
+.box::before {
+  content: "Save Water";
+  color: white;
+  font-family: Arial;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box::after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: -50%;
+  height: 200%;
+  width: 200%;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 40%;
+  animation: spin 6s linear infinite;
+}
+
+.handle {
+  color: #363636;
+  background-color: #363636;
+  width: 1.5rem;
+  height: 0.25rem;
+  z-index: 10;
+}
+
+.left {
+  position: absolute;
+  top: 0;
+  left: 0rem;
+}
+
+.right {
+  position: absolute;
+  top: 0;
+  right: 0rem;
+}
+
+
+
+
+@keyframes spin {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-100%) rotate(360deg);
+  }
+}
