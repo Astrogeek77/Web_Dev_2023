@@ -45,6 +45,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: var(--wrapper-gap);
+  padding: 2.5rem;
 }
 
 .button {
