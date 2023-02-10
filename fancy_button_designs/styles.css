@@ -171,6 +171,13 @@ body {
   --glow-blur-size: 10px;
 }
 
+.glow-effect[data-animation-speed="slow"] {
+  --animation-speed: 1400ms;
+}
+.glow-effect[data-animation-speed="fast"] {
+  --animation-speed: 1000ms;
+}
+
 .inspiration {
   position: absolute;
   bottom: 10px;
