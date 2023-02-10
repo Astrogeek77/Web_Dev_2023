@@ -9,3 +9,4 @@
 | 04  |       [Heading Parallax Effect](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/Heading-Parallax)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/Heading-Parallax/)
 | 05  |       [Fluid Animation](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/Fluid%20Animation)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/Fluid%20Animation/)
 | 06  |       [CSS Design - Shapes](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/CSS-designs)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/CSS-designs/)
+| 067  |       [CSS Design - buttons](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/fancy_button_designs)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/fancy_button_designs/)
