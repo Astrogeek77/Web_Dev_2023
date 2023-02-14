@@ -1,0 +1,59 @@
+:root {
+    --background-1-url: url("https://images.unsplash.com/photo-1548704686-f0a484c1bd67?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzQ2ODk3NTI&ixlib=rb-4.0.3&q=80");
+    --background-2-url: url("https://images.unsplash.com/photo-1675763605490-86f495594a5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=2000&q=60");
+    --background-3-url: url("https://images.unsplash.com/photo-1676223795137-69c8637fd535?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+    --background-4-url: url("./images/img-4.jpg");
+    --background-5-url: url("https://source.unsplash.com/1600x900/?earth");
+    --background-6-url: url("https://source.unsplash.com/1600x900/?wonders");
+}
+
+body {
+  background: #000;
+  overflow: hidden;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.ken {
+  animation: kenny 90s linear infinite;
+  /* background-image: var(--background-4-url); */
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  width: 100vw;
+  opacity: 1;
+  overflow: hidden;
+  scale: 2;
+}
+
+.wrapper h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1rem;
+  color: #eee;
+  opacity: .5;
+  text-transform: uppercase;
+}
+
+.wrapper h1 a {
+  text-decoration: underline;
+  text-underline-offset: .125em;
+  color: inherit;
+}
+
+@keyframes kenny {
+    50% {
+    opacity: 0.5;
+    scale: 1.5;
+  }
+  100% {
+    opacity: 0;
+    scale: 1;
+  }
+}
