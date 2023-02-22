@@ -1,0 +1,193 @@
+html,
+body {
+  margin: 0;
+  --outline-color: #fff;
+  --width-controls: 200px;
+  --slider-color: transparent;
+}
+
+.full-screen-video-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-items: center;
+}
+
+.full-screen-video-container .video-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: min(800px, 100%);
+  font-size: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .full-screen-video-container .video-controls {
+    flex-direction: column;
+    gap: 3rem;
+    margin: 0;
+  }
+
+  .full-screen-video-container .video-controls > * {
+    margin: 0;
+  }
+}
+
+.full-screen-video-container .video-controls > * {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  border: 2px solid var(--outline-color);
+  width: var(--width-controls);
+  margin: 1rem;
+}
+
+/* .full-screen-video-container .video-controls > *:is(label) {
+  color: #fff;
+  font-size: 1rem;
+} */
+
+.full-screen-video-container .video-controls > *:not(#Volume-slider) {
+  padding: 0.5rem 1.5rem;
+  background-color: #aaa3;
+  color: #eee;
+}
+
+.full-screen-video-container .video-controls > *:is(#Volume-slider) {
+  position: relative;
+  width: 10rem;
+  /* width: 100%; */
+}
+
+.full-screen-video-container .video-controls > *:is(#Volume-slider)::before {
+  content: 'Volume';
+  position: absolute;
+  font-size: 1rem;
+  color: #fff;
+  inset: 0;
+  top: -25px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: var(--width-controls) !important;
+  height: 15px;
+  background: var(--slider-color);
+  outline: none;
+  border: 2px solid var(--outline-color);
+  border-radius: 4px;
+}
+
+/* for chrome/safari */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 30px;
+  background: #000;
+  cursor: pointer;
+  border: 5px solid var(--outline-color);
+  border-radius: 4px;
+}
+
+/* for firefox */
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 30px;
+  background: #000;
+  cursor: pointer;
+  border: 5px solid var(--outline-color);
+  border-radius: 4px;
+}
+
+.full-screen-video-container .video-controls > *:not(#Volume-slider):hover {
+  background-color: red;
+  color: #333;
+}
+
+.full-screen-video-container video {
+  z-index: -1;
+  position: absolute;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.full-screen-video-content {
+  background-color: #aaa3;
+  color: #eee;
+  padding: 2rem;
+  font-size: 4em;
+  font-weight: bold;
+  /* margin-top: 100px; */
+}
+
+/* Background Styles Only */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600');
+
+* {
+  font-family: Raleway;
+}
+
+html {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dfdfdf;
+}
+
+.side-links {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.side-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: white;
+  width: 180px;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+.side-link-youtube {
+  background-color: red;
+}
+
+.side-link-twitter {
+  background-color: #1da1f2;
+}
+
+.side-link-github {
+  background-color: #6e5494;
+}
+
+.side-link-text {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.side-link-icon {
+  color: white;
+  font-size: 30px;
+}
