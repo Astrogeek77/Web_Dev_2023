@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Image Slider CSS only</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="slider-container">
+      <div class="menu">
+        <label for="slide-dot-1"></label>
+        <label for="slide-dot-2"></label>
+        <label for="slide-dot-3"></label>
+        <label for="slide-dot-4"></label>
+        <label for="slide-dot-5"></label>
+      </div>
+
+      <input id="slide-dot-1" type="radio" name="slides" checked />
+      <div class="slide slide-1">
+        <div class="wrapper">
+          <h2>Slide 1</h2>
+          <button>Do Something</button>
+        </div>
+      </div>
+
+      <input id="slide-dot-2" type="radio" name="slides" />
+      <div class="slide slide-2">
+        <div class="wrapper">
+          <h2>Slide 2</h2>
+          <a href="http://github.com/astrogeek77">a link to github</a>
+        </div>
+      </div>
+
+      <input id="slide-dot-3" type="radio" name="slides" />
+      <div class="slide slide-3">
+        <div class="wrapper">
+          <h2>Slide 3</h2>
+          <p>You could also just use a container with some text in it</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, autem!
+            Perferendis dolorem explicabo minus error nobis, ducimus natus
+            perspiciatis porro ullam minima quisquam omnis quidem, repellat modi
+            tempora iste commodi quis quas odio laudantium quaerat dicta debitis
+            repudiandae veniam! Voluptate velit veritatis harum nemo inventore
+            delectus numquam nam aliquid quam!
+          </p>
+        </div>
+      </div>
+
+      <input id="slide-dot-4" type="radio" name="slides" />
+      <div class="slide slide-4">
+        <div class="wrapper">
+          <h2>Slide 4</h2>
+          <img
+            name="avatar"
+            src="https://avatars.githubusercontent.com/u/54165628?v=4"
+            alt="Gautam Jain img"
+          />
+          <button>Do Something</button>
+        </div>
+      </div>
+
+      <input id="slide-dot-5" type="radio" name="slides" />
+      <div class="slide slide-5">
+        <div class="wrapper">
+          <h2>Slide 5</h2>
+          <select name="select-component" id="">
+            <option default selected>--Select Option--</option>
+            <option value="1">option 1</option>
+            <option value="2">option 2</option>
+            <option value="3">option 3</option>
+          </select>
+          <button>Do Something</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Side Links Only -->
+    <div class="side-links">
+      <!-- <a
+        href="https://youtu.be/uKVVSwXdLr0"
+        target="_blank"
+        class="side-link side-link-youtube"
+      >
+        <i class="fab fa-youtube-square side-link-icon"></i>
+        <span class="side-link-text">View Tutorial</span>
+      </a> -->
+      <a
+        href="https://github.com/astrogeek77"
+        target="_blank"
+        class="side-link side-link-github side-link-icon"
+      >
+        <i class="fab fa-github-square"></i>
+        <span class="side-link-text">View GitHub</span>
+      </a>
+      <!-- <a
+        href="https://twitter.com/DevSimplified"
+        target="_blank"
+        class="side-link side-link-twitter"
+      >
+        <i class="fab fa-twitter-square side-link-icon"></i>
+        <span class="side-link-text">View Twitter</span>
+      </a> -->
+    </div>
+
+    <!-- <script src="" async defer></script> -->
+    <script>
+      const navigator = document.querySelector('.menu label')
+      console.log(navigator)
+      navigator.focus()
+    </script>
+  </body>
+</html>
