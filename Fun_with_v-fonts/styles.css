@@ -1,0 +1,297 @@
+@font-face {
+  font-family: 'Kyiv Sans';
+  src: url('./assets/fonts/KyivTypeSans.woff2') format(woff2);
+  font-weight: 0 1000;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kyiv Serif';
+  src: url('./assets/fonts/KyivTypeSerif.woff2') format(woff2);
+  font-weight: 0 1000;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kyiv Titling';
+  src: url('./assets/fonts/KyivTypeTitling.woff2') format(woff2);
+  font-weight: 0 1000;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Flex';
+  src: url('./assets/fonts/RobotoFlex.woff2') format(woff2);
+  font-weight: 100 1000;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Recursive';
+  src: url('./assets/fonts/Recursive.woff2') format(woff2);
+  font-weight: 300 1000;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Science Gothic';
+  src: url('./assets/fonts/ScienceGothic.woff2') format(woff2);
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GRADUATE';
+  src: url('./assets/fonts/GRADUATE.woff2') format(woff2);
+  /* font-weight: 100 900; */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Movement V';
+  src: url('./assets/fonts/MovementV.woff2') format(woff2);
+  /* font-weight: 100 900; */
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  height: 100dvh;
+  width: 100%;
+  background-color: #111;
+}
+
+.wrapper {
+  column-gap: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: yellowgreen;
+}
+
+h2 {
+  font-size: 4rem;
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+}
+
+h2 span {
+  color: brown;
+}
+
+.kyiv-sans-font {
+  --font-weight: 100;
+  --font-midline: -1000;
+  --font-contrast: 250;
+
+  font-family: 'Kyiv Sans';
+  line-height: 1.1;
+  font-weight: 1000;
+
+  font-variation-settings: 'wght' var(--font-weight), 'MIDL' var(--font-midline),
+    'CONT' var(--font-contrast);
+  transition: font-variation-settings 0.5s;
+}
+
+.kyiv-sans-font:hover {
+  --font-weight: 800;
+  --font-midline: -100;
+  --font-contrast: 800;
+}
+
+.kyiv-serif-font {
+  --font-weight: 100;
+  --font-contrast: 250;
+
+  font-family: 'Kyiv Serif';
+  line-height: 1.1;
+  font-weight: 1000;
+
+  font-variation-settings: 'wght' var(--font-weight),
+    'CONT' var(--font-contrast);
+  transition: font-variation-settings 0.5s;
+}
+
+.kyiv-serif-font:hover {
+  --font-weight: 800;
+  --font-contrast: 800;
+}
+
+/* .v-font-3 {
+  --font-weight: 100;
+  --font-contrast: 250;
+
+  font-family: 'Kyiv Titling';
+  line-height: 1.1;
+  font-weight: 1000;
+
+  font-variation-settings: 'wght' var(--font-weight),
+    'CONT' var(--font-contrast);
+  transition: font-variation-settings 0.5s;
+}
+
+.v-font-3:hover {
+  --font-weight: 800;
+  --font-contrast: 800;
+} */
+
+.roboto-flex-font {
+  --font-weight: 100;
+  --font-optical-size: 8;
+  --font-width: 25;
+  --font-slant: 0;
+  --font-grade: -200;
+
+  font-family: 'Roboto Flex';
+  line-height: 1.1;
+  font-weight: 1000;
+
+  font-variation-settings: 'wght' var(--font-weight),
+    'opsz' var(--font-optical-size), 'GRAD' var(--font-grade),
+    'wdth' var(--font-width), 'slnt' var(--font-slant);
+  transition: font-variation-settings 0.5s;
+}
+
+.roboto-flex-font:hover {
+  --font-weight: 800;
+  /* --font-optical-size: 144; */
+  --font-width: 50;
+  --font-slant: 3;
+  --font-grade: 150;
+}
+
+.recursive-monospace-font {
+  --font-weight: 300;
+  --font-monospace-style: 0;
+  --font-slant: 0;
+
+  font-family: 'Recursive';
+  line-height: 1.1;
+  font-weight: 1000;
+
+  font-variation-settings: 'wght' var(--font-weight),
+    'MONO' var(--font-monospace-style), 'slnt' var(--font-slant);
+  transition: font-variation-settings 0.5s;
+}
+
+.recursive-monospace-font:hover {
+  --font-weight: 800;
+  --font-monospace-style: 1;
+  --font-slant: 0;
+}
+
+.recursive-casual-font {
+  --font-weight: 300;
+  --font-casual-style: 0;
+  --font-slant: 0;
+
+  font-family: 'Recursive';
+  line-height: 1.1;
+  font-weight: 1000;
+
+  font-variation-settings: 'wght' var(--font-weight),
+    'CASL' var(--font-casual-style), 'slnt' var(--font-slant);
+  transition: font-variation-settings 0.5s;
+}
+
+.recursive-casual-font:hover {
+  --font-weight: 800;
+  --font-casual-style: 1;
+  --font-slant: 0;
+  /* font-family: 'Recursive Casual'; */
+}
+
+.recursive-cursive-font {
+  --font-weight: 300;
+  --font-cursive-style: 0;
+  --font-slant: 0;
+
+  font-family: 'Recursive';
+  line-height: 1.1;
+  font-weight: 1000;
+
+  font-variation-settings: 'wght' var(--font-weight),
+    'CRSV' var(--font-cursive-style), 'slnt' var(--font-slant);
+  transition: font-variation-settings 0.5s;
+}
+
+.recursive-cursive-font:hover {
+  --font-weight: 800;
+  --font-cursive-style: 1;
+  --font-slant: 0;
+}
+
+.science-gothic-font {
+  --font-weight: 300;
+  --font-y-opaque: 18;
+  --font-slant: 0;
+  --font-width: 100;
+
+  font-family: 'Science Gothic';
+  line-height: 1.1;
+  font-weight: 1000;
+
+  font-variation-settings: 'wght' var(--font-weight),
+    'YOPQ' var(--font-y-opaque), 'slnt' var(--font-slant),
+    'wdth' var(--font-width);
+  transition: font-variation-settings 0.5s;
+}
+
+.science-gothic-font:hover {
+  --font-weight: 900;
+  --font-y-opaque: 50;
+  /* --font-slant: 0; */
+  --font-width: 110;
+}
+
+.graduate-font {
+  /* --font-weight: 300; */
+  --font-optical-size: 8;
+  --font-grade: 0;
+  --font-contrast: 0;
+  --font-x-opaque: 100;
+  --font-y-opaque: 100;
+  --font-xtra: 100;
+
+  font-family: 'GRADUATE';
+  line-height: 1.1;
+  font-weight: 1000;
+
+  font-variation-settings: 'XTRA' var(--font-xtra), 'YOPQ' var(--font-y-opaque),
+    'XOPQ' var(--font-x-opaque), 'CNTR' var(--font-contrast),
+    'OPSZ' var(--font-optical-size);
+  transition: font-variation-settings 0.5s;
+}
+
+.graduate-font:hover {
+  --font-optical-size: 12;
+  --font-grade: 10;
+  --font-contrast: 50;
+  --font-x-opaque: 300;
+  --font-y-opaque: 300;
+  --font-xtra: 200;
+}
+
+.movement-v-font {
+  --font-weight: 300;
+  --font-space: 100;
+
+  font-family: 'Movement V';
+  line-height: 1.1;
+  font-weight: 1000;
+
+  font-variation-settings: 'wght' var(--font-weight), 'SPAC' var(--font-space);
+  transition: font-variation-settings 0.5s;
+}
+
+.movement-v-font:hover {
+  --font-weight: 900;
+  --font-space: 110;
+}
