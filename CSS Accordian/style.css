@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+* {
+  --background-color: #444;
+  --primary-color: #2c3e50;
+  --secondary-color: #1a252f;
+  --primary-text-color: #ecf0f1;
+  --accordian-max-width: 900px;
+
+  /* transition: all 0.5s ease-in; */
+  font-family: monospace;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--primary-text-color);
+  padding: 0 1em 1em;
+}
+
+h1 {
+  margin: 0;
+  line-height: 1.1;
+  text-align: center;
+  font-size: 3.5em;
+}
+
+h2 {
+  margin: 0 0 0.5em;
+  font-weight: normal;
+  text-align: center;
+}
+
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  /* max-width: var(--accordian-max-width); */
+}
+
+.wrapper {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  gap: 2rem;
+  font-size: 1.2rem;
+}
+
+/* .row .col {
+  flex-basis: 500px;
+} */
+/* .row .col:last-child {
+  margin-left: 1em;
+} */
+
+/* Accordion styles */
+.tabs {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-inline: auto;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+  max-width: var(--accordian-max-width);
+}
+
+.tabs > *:not(:last-child) {
+  border-bottom: 1px solid var(--primary-text-color);
+}
+
+.tab {
+  width: 100%;
+  color: var(--primary-color);
+  overflow: hidden;
+}
+
+.tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background: var(--primary-color);
+  color: var(--primary-text-color);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tab-label:hover,
+.tab-label:focus {
+  background: var(--secondary-color);
+  color: var(--primary-text-color);
+}
+.tab-label::after {
+  content: '❯';
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.35s;
+}
+.tab-content {
+  max-height: 0;
+  padding: 0 1em;
+
+  color: var(--secondary-color);
+  background-color: var(--primary-text-color);
+  transition: all 0.35s;
+}
+
+.tab-content > * {
+  margin: 0;
+  /* padding: 0; */
+  width: fit-content;
+}
+
+/* .tab-content > ul > li {
+  padding: 0;
+  width: fit-content;
+} */
+
+.tab-close {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  /* width: 10%; */
+  font-size: 1em;
+  background: var(--secondary-color);
+  color: var(--primary-text-color);
+  cursor: pointer;
+}
+.tab-close:hover,
+.tab-close:focus {
+  background: var(--secondary-color);
+  color: var(--primary-text-color);
+}
+
+input:checked + .tab-label {
+  background: var(--secondary-color);
+  color: var(--primary-text-color);
+}
+input:checked + .tab-label::after {
+  transform: rotate(90deg);
+}
+input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+}
