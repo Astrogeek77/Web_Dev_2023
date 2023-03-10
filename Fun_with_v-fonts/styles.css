@@ -100,7 +100,8 @@ h2 span {
   transition: font-variation-settings 0.5s;
 }
 
-.kyiv-sans-font:hover {
+.kyiv-sans-font:hover,
+.kyiv-sans-font:focus {
   --font-weight: 800;
   --font-midline: -100;
   --font-contrast: 800;
@@ -119,7 +120,8 @@ h2 span {
   transition: font-variation-settings 0.5s;
 }
 
-.kyiv-serif-font:hover {
+.kyiv-serif-font:hover,
+.kyiv-serif-font:focus {
   --font-weight: 800;
   --font-contrast: 800;
 }
@@ -159,7 +161,8 @@ h2 span {
   transition: font-variation-settings 0.5s;
 }
 
-.roboto-flex-font:hover {
+.roboto-flex-font:hover,
+.roboto-flex-font:focus {
   --font-weight: 800;
   /* --font-optical-size: 144; */
   --font-width: 50;
@@ -181,7 +184,7 @@ h2 span {
   transition: font-variation-settings 0.5s;
 }
 
-.recursive-monospace-font:hover {
+.recursive-monospace-font:hover .recursive-monospace-font:focus {
   --font-weight: 800;
   --font-monospace-style: 1;
   --font-slant: 0;
@@ -201,7 +204,8 @@ h2 span {
   transition: font-variation-settings 0.5s;
 }
 
-.recursive-casual-font:hover {
+.recursive-casual-font:hover,
+.recursive-casual-font:focus {
   --font-weight: 800;
   --font-casual-style: 1;
   --font-slant: 0;
@@ -222,7 +226,8 @@ h2 span {
   transition: font-variation-settings 0.5s;
 }
 
-.recursive-cursive-font:hover {
+.recursive-cursive-font:hover,
+.recursive-cursive-font:focus {
   --font-weight: 800;
   --font-cursive-style: 1;
   --font-slant: 0;
@@ -244,7 +249,7 @@ h2 span {
   transition: font-variation-settings 0.5s;
 }
 
-.science-gothic-font:hover {
+.science-gothic-font:hover .science-gothic-font:focus {
   --font-weight: 900;
   --font-y-opaque: 50;
   /* --font-slant: 0; */
@@ -270,7 +275,8 @@ h2 span {
   transition: font-variation-settings 0.5s;
 }
 
-.graduate-font:hover {
+.graduate-font:hover,
+.graduate-font:focus {
   --font-optical-size: 12;
   --font-grade: 10;
   --font-contrast: 50;
@@ -291,7 +297,8 @@ h2 span {
   transition: font-variation-settings 0.5s;
 }
 
-.movement-v-font:hover {
+.movement-v-font:hover,
+.movement-v-font:focus {
   --font-weight: 900;
   --font-space: 110;
 }

@@ -2,14 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-* {
-  font-family: Raleway;
-}
-
 .side-links {
+  font-family: Raleway, sans-serif;
   position: absolute;
   top: 15px;
   right: 15px;
+}
+
+.side-link i {
+  display: none;
 }
 
 .side-link {
@@ -18,8 +19,9 @@
   justify-content: center;
   text-decoration: none;
   margin-bottom: 10px;
+  font-size: 12px;
   color: white;
-  width: 180px;
+  width: 100px;
   padding: 10px 0;
   border-radius: 10px;
 }
@@ -29,19 +31,19 @@
 }
 
 .side-link-linkedin {
-  background-color: #1da1f2;
+  background-color: #1da1f2aa;
 }
 
 .side-link-github {
-  background-color: #6e5494;
+  background-color: #6e5494aa;
 }
 
 .side-link-text {
-  margin-left: 10px;
-  font-size: 18px;
+  /* margin-left: 10px; */
+  /* font-size: 18px; */
 }
 
 .side-link-icon {
   color: white;
-  font-size: 30px;
+  /* font-size: 30px; */
 }
