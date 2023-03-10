@@ -184,7 +184,8 @@ h2 span {
   transition: font-variation-settings 0.5s;
 }
 
-.recursive-monospace-font:hover .recursive-monospace-font:focus {
+.recursive-monospace-font:hover,
+.recursive-monospace-font:focus {
   --font-weight: 800;
   --font-monospace-style: 1;
   --font-slant: 0;
@@ -249,7 +250,8 @@ h2 span {
   transition: font-variation-settings 0.5s;
 }
 
-.science-gothic-font:hover .science-gothic-font:focus {
+.science-gothic-font:hover,
+.science-gothic-font:focus {
   --font-weight: 900;
   --font-y-opaque: 50;
   /* --font-slant: 0; */
