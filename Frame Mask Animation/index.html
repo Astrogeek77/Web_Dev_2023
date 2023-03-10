@@ -1,20 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frame Mask Animation</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../side-links.css" />
+  </head>
+  <body>
     <div class="mask-container">
-        <div class="color-image"></div>
-        <img src="./assets/images/bw-image.jpg" alt="black-white-image">
+      <div class="color-image"></div>
+      <img src="./assets/images/bw-image.jpg" alt="black-white-image" />
     </div>
 
     <button class="reset-animation">play animation</button>
-
+    <!-- Side Links Only -->
+    <div class="side-links">
+      <a
+        href="https://icodergautam.nelify.app"
+        target="_blank"
+        class="side-link side-link-website"
+      >
+        <i class="fab fa-website-square side-link-icon"></i>
+        <span class="side-link-text">View Website</span>
+      </a>
+      <a
+        href="https://github.com/astrogeek77"
+        target="_blank"
+        class="side-link side-link-github side-link-icon"
+      >
+        <i class="fab fa-github-square"></i>
+        <span class="side-link-text">View GitHub</span>
+      </a>
+      <a
+        href="https://twitter.com/DevSimplified"
+        target="_blank"
+        class="side-link side-link-linkedin"
+      >
+        <i class="fab fa-linkedin-square side-link-icon"></i>
+        <span class="side-link-text">View Linkedin</span>
+      </a>
+    </div>
     <script src="app.js" defer></script>
-</body>
+  </body>
 </html>

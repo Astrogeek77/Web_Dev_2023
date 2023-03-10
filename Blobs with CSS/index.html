@@ -1,27 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blobs with CSS</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../side-links.css />
+  </head>
+  <body>
     <header class="grid-stack margin-bottom-600">
-        <div class="text-center padding-400 surface-neutral-200">
-            <h1 class="fs-900 fw-bold">Blobs with CSS only</h1>
-            <p><code>border-radius</code> can create some interesting shapes!</p>
-        </div>
-        <img src='https://images.unsplash.com/photo-1518560503146-4969551ce340?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTM1ODU3MTY&ixlib=rb-1.2.1&q=80' alt=''>
+      <div class="text-center padding-400 surface-neutral-200">
+        <h1 class="fs-900 fw-bold">Blobs with CSS only</h1>
+        <p><code>border-radius</code> can create some interesting shapes!</p>
+      </div>
+      <img
+        src="https://images.unsplash.com/photo-1518560503146-4969551ce340?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTM1ODU3MTY&ixlib=rb-1.2.1&q=80"
+        alt=""
+      />
     </header>
 
     <main class="grid-center margin-bottom-700">
-        <div class="profile">
-            <img src="./images/Gautam_main.jpg" alt="Gautam Jain" class="profile__image">
-            <p class="profile__name fs-700 fw-bold">Bill Murray</p>
-            <p class="profile__description">William James Murray (born September 21, 1950) is an American actor and comedian, who is known for his deadpan delivery.</p>
-        </div>
+      <div class="profile">
+        <img
+          src="./images/Gautam_main.jpg"
+          alt="Gautam Jain"
+          class="profile__image"
+        />
+        <p class="profile__name fs-700 fw-bold">Bill Murray</p>
+        <p class="profile__description">
+          William James Murray (born September 21, 1950) is an American actor
+          and comedian, who is known for his deadpan delivery.
+        </p>
+      </div>
     </main>
-</body>
+
+    <!-- Side Links Only -->
+    <div class="side-links">
+      <a
+        href="https://icodergautam.nelify.app"
+        target="_blank"
+        class="side-link side-link-website"
+      >
+        <i class="fab fa-website-square side-link-icon"></i>
+        <span class="side-link-text">View Website</span>
+      </a>
+      <a
+        href="https://github.com/astrogeek77"
+        target="_blank"
+        class="side-link side-link-github side-link-icon"
+      >
+        <i class="fab fa-github-square"></i>
+        <span class="side-link-text">View GitHub</span>
+      </a>
+      <a
+        href="https://twitter.com/DevSimplified"
+        target="_blank"
+        class="side-link side-link-linkedin"
+      >
+        <i class="fab fa-linkedin-square side-link-icon"></i>
+        <span class="side-link-text">View Linkedin</span>
+      </a>
+    </div>
+  </body>
 </html>

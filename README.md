@@ -16,4 +16,5 @@
 | 11  |       [CSS only Slider](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/Full-Screen-Slider)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/Full-Screen-Slider/)
 | 12  |       [Fun with Variable fonts](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/Fun_with_v-fonts)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/Fun_with_v-fonts/)
 | 13  |       [CSS only Accordian](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/CSS%20Accordian)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/CSS%20Accordian/)
+| 14  |       [Infinte CSS Carousel](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/infinite-logo-carousel)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/infinite-logo-carousel/)
 
