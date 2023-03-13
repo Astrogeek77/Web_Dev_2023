@@ -17,4 +17,5 @@
 | 12  |       [Fun with Variable fonts](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/Fun_with_v-fonts)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/Fun_with_v-fonts/)
 | 13  |       [CSS only Accordian](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/CSS%20Accordian)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/CSS%20Accordian/)
 | 14  |       [Infinte CSS Carousel](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/infinite-logo-carousel)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/infinite-logo-carousel/)
+| 15  |       [COC Wiki Cards](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/coc-cards)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/coc-cards/)
 
