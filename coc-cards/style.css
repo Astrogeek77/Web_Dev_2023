@@ -7,20 +7,45 @@
   box-sizing: border-box;
 }
 
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  /* background: linear-gradient(to bottom, #8c7a7a 0%, #af877c 65%, #af877c 100%); */
+  /* background: none;
+  background: transparent; */
+  /* background-color: #af877c; */
+  background: linear-gradient(to bottom, #8c7a7a 0%, #af877c 65%, #af877c 100%);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #ec9b3b;
+  cursor: pointer;
+}
+
 :root {
+  --heading-color: black;
   --barbarian-color: #ec9b3b;
   --archer-color: #ee5487;
   --gaint-color: #f6901a;
   --goblin-color: #82bb30;
   --wall_breaker-color: grey;
   --wizard-color: #4facff;
+  --healer-color: #ffd900aa;
+  --dragon-color: #800080;
 }
 
+html,
 body {
   background: linear-gradient(to bottom, #8c7a7a 0%, #af877c 65%, #af877c 100%)
     fixed;
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/coc-background.jpg')
-    no-repeat center center fixed;
+  background: url('./images/coc-background.jpg') no-repeat center center fixed;
   background-size: cover;
   font: 14px/20px 'Lato', Arial, sans-serif;
   color: #9e9e9e;
@@ -28,13 +53,14 @@ body {
 
   /* flex-flow: row; */
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 h1 {
   font-size: 48px !important;
   text-align: center;
   padding: 2rem;
-  color: black;
+  color: var(--heading-color);
   /* margin-block: 4rem; */
 }
 
@@ -86,17 +112,17 @@ h1 {
 }
 
 .clash-card__image--barbarian {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg');
+  background: url('./images/barbarian-bg.jpg');
 }
 .clash-card__image--barbarian img {
   width: 400px;
   position: absolute;
   top: -65px;
-  left: -70px;
+  left: -60px;
 }
 
 .clash-card__image--archer {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer-bg.jpg');
+  background: url('./images/archer-bg.jpg');
 }
 .clash-card__image--archer img {
   width: 400px;
@@ -106,17 +132,17 @@ h1 {
 }
 
 .clash-card__image--giant {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant-bg.jpg');
+  background: url('./images/giant-bg.jpg');
 }
 .clash-card__image--giant img {
   width: 340px;
   position: absolute;
   top: -30px;
-  left: -25px;
+  left: -40px;
 }
 
 .clash-card__image--goblin {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin-bg.jpg');
+  background: url('./images/goblin-bg.jpg');
 }
 .clash-card__image--goblin img {
   width: 370px;
@@ -126,7 +152,7 @@ h1 {
 }
 
 .clash-card__image--wizard {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/wizard-bg.jpg');
+  background: url('./images/wizard-bg.jpg');
 }
 .clash-card__image--wizard img {
   width: 345px;
@@ -136,7 +162,7 @@ h1 {
 }
 
 .clash-card__image--wall_breaker {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant-bg.jpg');
+  background: url('./images/giant-bg.jpg');
 }
 .clash-card__image--wall_breaker img {
   width: 200px;
@@ -147,7 +173,7 @@ h1 {
 }
 
 .clash-card__image--healer {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant-bg.jpg');
+  background: url('./images/giant-bg.jpg');
 }
 .clash-card__image--healer img {
   width: 400px;
@@ -158,29 +184,29 @@ h1 {
 }
 
 .clash-card__image--dragon {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg');
+  background: url('./images/barbarian-bg.jpg');
 }
 .clash-card__image--dragon img {
   width: 400px;
   /* height: 250px; */
   position: absolute;
   top: -120px;
-  left: -10px;
+  left: -30px;
 }
 
 .clash-card__image--pekka {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer-bg.jpg');
+  background: url('./images/archer-bg.jpg');
 }
 .clash-card__image--pekka img {
   width: 400px;
   /* height: 250px; */
   position: absolute;
   top: -120px;
-  left: -10px;
+  left: -30px;
 }
 
 .clash-card__image--golem {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer-bg.jpg');
+  background: url('./images/archer-bg.jpg');
 }
 .clash-card__image--golem img {
   width: 400px;
@@ -191,7 +217,7 @@ h1 {
 }
 
 .clash-card__image--valkyrie {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg');
+  background: url('./images/barbarian-bg.jpg');
 }
 .clash-card__image--valkyrie img {
   width: 300px;
@@ -202,7 +228,7 @@ h1 {
 }
 
 .clash-card__image--witch {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg');
+  background: url('./images/barbarian-bg.jpg');
 }
 .clash-card__image--witch img {
   width: 400px;
@@ -210,6 +236,137 @@ h1 {
   position: absolute;
   top: -150px;
   left: -15px;
+}
+
+.clash-card__image--barbarian_king {
+  background: url('./images/barbarian-bg.jpg');
+}
+.clash-card__image--barbarian_king img {
+  width: 450px;
+  /* height: 250px; */
+  position: absolute;
+  top: -150px;
+  left: -45px;
+}
+
+.clash-card__image--archer_queen {
+  background: url('./images/archer-bg.jpg');
+}
+.clash-card__image--archer_queen img {
+  width: 450px;
+  /* height: 250px; */
+  position: absolute;
+  top: -180px;
+  left: -70px;
+}
+
+.clash-card__image--grand_warden {
+  background: url('./images/goblin-bg.jpg');
+}
+.clash-card__image--grand_warden img {
+  width: 400px;
+  /* height: 250px; */
+  position: absolute;
+  top: -130px;
+  left: -70px;
+}
+
+.clash-card__image--royal_champion {
+  background: url('./images/wizard-bg.jpg');
+}
+.clash-card__image--royal_champion img {
+  width: 350px;
+  /* height: 250px; */
+  position: absolute;
+  top: -80px;
+  left: -40px;
+}
+
+.clash-card__image--hog_rider {
+  background: url('./images/barbarian-bg.jpg');
+}
+.clash-card__image--hog_rider img {
+  width: 300px;
+  /* height: 250px; */
+  position: absolute;
+  top: -100px;
+  left: -10px;
+}
+.clash-card__image--bowler {
+  background: url('./images/archer-bg.jpg');
+}
+.clash-card__image--bowler img {
+  width: 350px;
+  /* height: 250px; */
+  position: absolute;
+  top: -80px;
+  left: -30px;
+}
+
+.clash-card__image--balloon {
+  background: url('./images/wizard-bg.jpg');
+}
+.clash-card__image--balloon img {
+  width: 250px;
+  /* height: 250px; */
+  position: absolute;
+  top: -170px;
+  left: 40px;
+}
+
+.clash-card__image--ice_wizard {
+  background: url('./images/wizard-bg.jpg');
+}
+.clash-card__image--ice_wizard img {
+  width: 320px;
+  /* height: 250px; */
+  position: absolute;
+  top: -120px;
+  left: -15px;
+}
+
+.clash-card__image--night_witch {
+  background: url('./images/barbarian-bg.jpg');
+}
+.clash-card__image--night_witch img {
+  width: 350px;
+  /* height: 250px; */
+  position: absolute;
+  top: -100px;
+  left: -20px;
+}
+
+.clash-card__image--electro_dragon {
+  background: url('./images/barbarian-bg.jpg');
+}
+.clash-card__image--electro_dragon img {
+  width: 350px;
+  /* height: 250px; */
+  position: absolute;
+  top: -120px;
+  left: -40px;
+}
+
+.clash-card__image--minor {
+  background: url('./images/barbarian-bg.jpg');
+}
+.clash-card__image--minor img {
+  width: 350px;
+  /* height: 250px; */
+  position: absolute;
+  top: -120px;
+  left: -30px;
+}
+
+.clash-card__image--minion {
+  background: url('./images/barbarian-bg.jpg');
+}
+.clash-card__image--minion img {
+  width: 400px;
+  /* height: 250px; */
+  position: absolute;
+  top: -100px;
+  left: -50px;
 }
 
 .clash-card__level {
@@ -224,27 +381,27 @@ h1 {
 }
 
 .clash-card__level--archer {
-  color: #ee5487;
+  color: var(--archer-color);
 }
 
 .clash-card__level--giant {
-  color: #f6901a;
+  color: var(--gaint-color);
 }
 
 .clash-card__level--goblin {
-  color: #82bb30;
+  color: var(--goblin-color);
 }
 
 .clash-card__level--wizard {
-  color: #4facff;
+  color: var(--wizard-color);
 }
 
 .clash-card__level--wall_breaker {
-  color: grey;
+  color: var(--wall_breaker-color);
 }
 
 .clash-card__level--healer {
-  color: #ffd700aa;
+  color: var(--healer-color);
 }
 
 .clash-card__level--dragon {
@@ -267,6 +424,54 @@ h1 {
   color: darkviolet;
 }
 
+.clash-card__level--barbarian_king {
+  color: var(--barbarian-color);
+}
+
+.clash-card__level--archer_queen {
+  color: #ee5487;
+}
+
+.clash-card__level--grand_warden {
+  color: mediumslateblue;
+}
+
+.clash-card__level--royal_champion {
+  color: darkcyan;
+}
+
+.clash-card__level--hog_rider {
+  color: brown;
+}
+
+.clash-card__level--bowler {
+  color: darkcyan;
+}
+
+.clash-card__level--balloon {
+  color: red;
+}
+
+.clash-card__level--ice-wizard {
+  color: blue;
+}
+
+.clash-card__level--night_witch {
+  color: darkslateblue;
+}
+
+.clash-card__level--electro_dragon {
+  color: rgba(0, 206, 209);
+}
+
+.clash-card__level--minion {
+  color: darkslateblue;
+}
+
+.clash-card__level--minor {
+  color: darkorchid;
+}
+
 .clash-card__unit-name {
   font-size: 26px;
   color: black;
@@ -277,6 +482,9 @@ h1 {
 .clash-card__unit-description {
   padding: 20px;
   margin-bottom: 10px;
+  height: 160px;
+  /* overflow-y: scroll;
+  border: 1px solid black; */
 }
 
 .clash-card__unit-stats--barbarian {
@@ -359,6 +567,90 @@ h1 {
 }
 .clash-card__unit-stats--witch .one-third {
   background: darkslateblue;
+}
+
+.clash-card__unit-stats--barbarian_king {
+  background: var(--barbarian-color);
+}
+.clash-card__unit-stats--barbarian_king .one-third {
+  border-right: 1px solid #bd7c2f;
+}
+
+.clash-card__unit-stats--archer_queen {
+  background: #ee5487;
+}
+.clash-card__unit-stats--archer_queen .one-third {
+  border-right: 1px solid #d04976;
+}
+
+.clash-card__unit-stats--grand_warden {
+  background: mediumslateblue;
+}
+.clash-card__unit-stats--grand_warden .one-third {
+  border-right: 1px solid mediumslateblue;
+}
+
+.clash-card__unit-stats--hog_rider {
+  background: brown;
+}
+.clash-card__unit-stats--hog_rider .one-third {
+  border-right: 1px solid brown;
+}
+
+.clash-card__unit-stats--bowler {
+  background: blue;
+}
+.clash-card__unit-stats--bowler .one-third {
+  border-right: 1px solid blue;
+}
+
+.clash-card__unit-stats--royal_champion {
+  background: darkcyan;
+}
+.clash-card__unit-stats--royal_champion .one-third {
+  border-right: 1px solid darkcyan;
+}
+
+.clash-card__unit-stats--balloon {
+  background: red;
+}
+.clash-card__unit-stats--balloon .one-third {
+  border-right: 1px solid red;
+}
+
+.clash-card__unit-stats--ice_wizard {
+  background: blueviolet;
+}
+.clash-card__unit-stats--ice_wizard .one-third {
+  border-right: 1px solid blueviolet;
+}
+
+.clash-card__unit-stats--night_witch {
+  background: darkslateblue;
+}
+.clash-card__unit-stats--night_witch .one-third {
+  border-right: 1px solid darkslateblue;
+}
+
+.clash-card__unit-stats--electro_dragon {
+  background: rgba(0, 206, 209, 0.811);
+}
+.clash-card__unit-stats--electro_dragon .one-third {
+  border-right: 1px solid rgba(0, 206, 209, 0.811);
+}
+
+.clash-card__unit-stats--minor {
+  background: darkolivegreen;
+}
+.clash-card__unit-stats--minor .one-third {
+  border-right: 1px solid darkolivegreen;
+}
+
+.clash-card__unit-stats--minion {
+  background: darkorchid;
+}
+.clash-card__unit-stats--minion .one-third {
+  border-right: 1px solid darkorchid;
 }
 
 .clash-card__unit-stats {
