@@ -1,0 +1,129 @@
+:root {
+  --gray: #e0e5ec;
+  --sizeFactor: 15;
+  --fontSize: 4em;
+
+  --scalingFactor: calc(100 / var(--sizeFactor));
+  --size: calc(1rem * var(--sizeFactor));
+
+  user-select: none;
+}
+
+@media (max-width: 600px) {
+  :root {
+    --sizeFactor: 7;
+    --fontSize: 2em;
+
+    --scalingFactor: calc(1 * var(--sizeFactor));
+  }
+}
+
+html,
+body {
+  background: var(--gray);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+  height: 100dvh;
+}
+
+.wrapper {
+  height: inherit;
+  position: relative;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+input[type='checkbox'] {
+  visibility: hidden;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.dot,
+.trigger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: var(--size);
+  width: var(--size);
+  /* margin: 10px; */
+  background: var(--gray);
+  box-shadow: 5px 5px 10px rgba(8, 98, 232, 0.6),
+    -5px -5px 10px rgba(29, 7, 199, 0.5);
+  border-radius: 50%;
+  user-select: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.trigger {
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  font-size: var(--fontSize);
+}
+.trigger:before {
+  content: 'click';
+}
+#trigger:checked + .trigger:before {
+  content: 'reset';
+}
+
+#trigger:checked + .trigger + .dots > .dot {
+  animation-name: wave;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+.dot {
+  opacity: 1;
+  transform: translate3d(-50%, -50%, 0) scale3d(0, 1, 1);
+}
+.dot:nth-of-type(2) {
+  z-index: 1;
+  animation-delay: 0.5s;
+}
+.dot:nth-of-type(3) {
+  z-index: 2;
+  animation-delay: 1s;
+}
+.dot:nth-of-type(4) {
+  z-index: 3;
+  animation-delay: 1.5s;
+}
+.dot:nth-of-type(5) {
+  z-index: 4;
+  animation-delay: 2s;
+}
+.dot:nth-of-type(6) {
+  z-index: 5;
+  animation-delay: 2.5s;
+}
+.dot:nth-of-type(7) {
+  z-index: 6;
+  animation-delay: 3s;
+}
+.dot:nth-of-type(8) {
+  z-index: 7;
+  animation-delay: 3.5s;
+}
+
+@keyframes wave {
+  0% {
+    opacity: 1;
+    transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(-50%, -50%, 0)
+      scale3d(var(--scalingFactor), var(--scalingFactor), 1);
+  }
+}
