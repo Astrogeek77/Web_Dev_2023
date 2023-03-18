@@ -1,0 +1,242 @@
+@property --gradient-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-green-1: #052b2f;
+  --clr-green-2: #073438;
+  --clr-green-3: #0e4b50;
+  --clr-green-4: #2d8f85;
+  --clr-green-5: #637c54;
+
+  --clr-purple-1: #4b0082;
+  --clr-purple-2: #e6e6fa;
+  --clr-purple-3: #dda0dd;
+  --clr-purple-4: #662d91;
+  --clr-purple-5: #800080;
+
+  --clr-red-1: #ff3800;
+  --clr-red-2: #960018;
+  --clr-red-3: #ff0800;
+  --clr-red-4: #fbceb1;
+  --clr-red-5: #660000;
+
+  --clr-blue-1: #00bfff;
+  --clr-blue-2: #007fff;
+  --clr-blue-3: #0039a6;
+  --clr-blue-4: #00ffff;
+  --clr-blue-5: #002d62;
+
+  --background-color: #222;
+  --gradient-angle: 0deg;
+
+  --animation-duration-value: 20s;
+  --card-blue-value: 2.5rem;
+  --card-height: 55vh;
+  --wrapper-padding: 0rem;
+  --card-gap: 4rem 2rem;
+}
+
+/* :root {
+  --clr-1: rgb(99, 89, 133);
+  --clr-2: rgb(68, 60, 104);
+  --clr-3: rgb(57, 48, 83);
+  --clr-4: rgb(24, 18, 43);
+  --clr-5: rgb(21, 11, 21);
+} */
+
+body {
+  background: var(--background-color);
+  min-height: 100vh;
+}
+
+.wrapper {
+  padding-block: var(--wrapper-padding);
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  gap: var(--card-gap);
+  justify-items: center;
+}
+
+/* Grid Area */
+
+/* .card:nth-child(1) {
+  grid-area: one;
+}
+.card:nth-child(2) {
+  grid-area: two;
+}
+.card:nth-child(3) {
+  grid-area: three;
+}
+.card:nth-child(4) {
+  grid-area: four;
+}
+
+.wrapper {
+  grid-template-areas: 'one two three four';
+}
+
+@media (max-width: 1290px) {
+  .wrapper {
+    --wrapper-padding: 4rem;
+    grid-template-areas:
+      'one two three'
+      '.   four   .';
+  }
+}
+
+@media (max-width: 1050px) {
+  .wrapper {
+    grid-template-areas:
+      'one   two'
+      'three four';
+  }
+}
+
+@media (max-width: 670px) {
+  .wrapper {
+    grid-template-areas:
+      'one'
+      'two'
+      'three'
+      'four';
+  }
+} */
+
+/* Grid column span layout */
+
+.wrapper {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1290px) {
+  .wrapper {
+    --wrapper-padding: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1050px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 670px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  height: var(--card-height);
+  aspect-ratio: 1/1.5 !important;
+  background: var(--clr-green-1);
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.card::before,
+.card::after {
+  content: '';
+  position: absolute;
+  inset: -0.5rem;
+  z-index: -1;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-green-3),
+    var(--clr-green-4),
+    var(--clr-green-5),
+    var(--clr-green-4),
+    var(--clr-green-3)
+  );
+  border-radius: inherit;
+  -webkit-animation: rotation var(--animation-duration-value) linear infinite;
+  animation: rotation var(--animation-duration-value) linear infinite;
+}
+
+.card::after {
+  filter: blur(var(--card-blue-value));
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.card:nth-child(2) {
+  background-color: var(--clr-red-1);
+}
+
+.card:nth-child(2)::after,
+.card:nth-child(2)::before {
+  background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-red-5),
+    var(--clr-red-4),
+    var(--clr-red-3),
+    var(--clr-red-4),
+    var(--clr-red-5)
+  );
+}
+
+.card:nth-child(3) {
+  background-color: var(--clr-purple-1);
+}
+
+.card:nth-child(3)::after,
+.card:nth-child(3)::before {
+  background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-purple-5),
+    var(--clr-purple-4),
+    var(--clr-purple-3),
+    var(--clr-purple-4),
+    var(--clr-purple-5)
+  );
+}
+
+.card:nth-child(4) {
+  background-color: var(--clr-blue-1);
+}
+
+.card:nth-child(4)::after,
+.card:nth-child(4)::before {
+  background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-blue-5),
+    var(--clr-blue-4),
+    var(--clr-blue-3),
+    var(--clr-blue-4),
+    var(--clr-blue-5)
+  );
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}

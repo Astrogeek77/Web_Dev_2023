@@ -19,4 +19,5 @@
 | 14  |       [Infinte CSS Carousel](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/infinite-logo-carousel)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/infinite-logo-carousel/)
 | 15  |       [COC Wiki Cards](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/coc-cards)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/coc-cards/)
 | 16  |       [Neumorphism Waves](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/neu-waves)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/neu-waves/)
+| 17  |       [CSS Designs - Borders](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/fancy_border_design)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/fancy_border_design/)
 
