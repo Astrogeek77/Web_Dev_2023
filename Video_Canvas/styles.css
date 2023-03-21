@@ -56,9 +56,10 @@ body {
 } */
 
 .full-screen-video-container .video-controls > *:not(#Volume-slider) {
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem;
   background-color: #aaa3;
   color: #eee;
+  font-size: .8em;
 }
 
 .full-screen-video-container .video-controls > *:is(#Volume-slider) {
