@@ -1,38 +1,50 @@
+html,
 body {
-  margin: 40px 0;
-  font-family: "Raleway";
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #bcaaa4;
+}
+
+body {
+  font-family: 'Raleway';
   font-size: 14px;
   font-weight: 500;
-  background-color: #BCAAA4;
+  background-color: #bcaaa4;
   -webkit-font-smoothing: antialiased;
 }
 
 .title {
-  font-family: "Raleway";
+  width: 100%;
+  font-family: 'Raleway';
   font-size: 24px;
   font-weight: 700;
-  color: #5D4037;
+  color: #5d4037;
   text-align: center;
+  margin: 0;
 }
 
 p {
   line-height: 1.5em;
 }
 
-h1 + p, p + p {
+/* h1 + p, p + p {
   margin-top: 10px;
-}
+} */
 
 .container {
-  padding: 40px 80px;
+  padding-top: 3rem;
+  height: inherit;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  gap: 2rem 10rem;
 }
 
 .card-wrap {
   margin: 10px;
-  transform: perspective(800px);
+  transform: perspective(1200px);
   transform-style: preserve-3d;
   cursor: pointer;
 }
@@ -42,7 +54,8 @@ h1 + p, p + p {
 .card-wrap:hover .card-info p {
   opacity: 1;
 }
-.card-wrap:hover .card-info, .card-wrap:hover .card-info p {
+.card-wrap:hover .card-info,
+.card-wrap:hover .card-info p {
   transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .card-wrap:hover .card-info:after {
@@ -51,23 +64,28 @@ h1 + p, p + p {
   transform: translateY(0);
 }
 .card-wrap:hover .card-bg {
-  transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), opacity 5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1),
+    opacity 5s cubic-bezier(0.23, 1, 0.32, 1);
   opacity: 0.8;
 }
 .card-wrap:hover .card {
-  transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
-  box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset white 0 0 0 6px;
+  transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1),
+    box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
+  box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px,
+    rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px,
+    inset white 0 0 0 6px;
 }
 
 .card {
   position: relative;
   flex: 0 0 240px;
-  width: 240px;
-  height: 320px;
+  width: 360px;
+  height: 440px;
   background-color: #333;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
+  box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px,
+    inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
   transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
@@ -82,7 +100,8 @@ h1 + p, p + p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95), opacity 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95),
+    opacity 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   pointer-events: none;
 }
 
@@ -104,14 +123,18 @@ h1 + p, p + p {
   z-index: 1;
 }
 .card-info:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   z-index: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+  background-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
   background-blend-mode: overlay;
   opacity: 0;
   transform: translateY(100%);
@@ -119,7 +142,7 @@ h1 + p, p + p {
 }
 
 .card-info h1 {
-  font-family: "Playfair Display";
+  font-family: 'Playfair Display';
   font-size: 36px;
   font-weight: 700;
   text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
