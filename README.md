@@ -21,4 +21,5 @@
 | 16  |       [Neumorphism Waves](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/neu-waves)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/neu-waves/)
 | 17  |       [CSS Designs - Borders](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/fancy_border_design)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/fancy_border_design/)
 | 18  |       [Parallax Depth Cards](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/Parallax-depth-cards)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/Parallax-depth-cards/)
+| 19  |       [Flip Cards](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/Flip_Cards)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/Flip_Cards/)
 
