@@ -10,8 +10,8 @@
 }
 
 body {
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
+  /* overflow: hidden; */
   /* background: linear-gradient(45deg, #061de3, #e306ca); */
   background: #222;
 
@@ -20,12 +20,13 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem 2rem;
   flex-wrap: wrap;
+  padding-block: 2rem;
 }
 
 .card_wrapper {
-  width: 320px;
+  width: min(100%, 320px);
   height: 450px;
   perspective: 800px;
 }
