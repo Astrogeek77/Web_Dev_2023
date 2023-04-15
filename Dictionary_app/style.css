@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  font-family: 'Courier New', Courier, monospace;
+  color: #eee;
+}
+
+.container {
+  background-color: #333a;
+  padding: 28px;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.1);
+  width: 90%;
+  margin: 10px;
+  max-width: 450px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.heading {
+  font-size: 28px;
+}
+
+.prtSpeech {
+  text-align: left;
+  font-size: 20px;
+  font-weight: semibold;
+}
+
+.meaning-wrapper {
+  margin-left: 0;
+  padding-left: 0;
+  text-align: left;
+  overflow-x: scroll;
+}
+
+.defination_container {
+  border: 2px dotted #ccc;
+  padding: 10px;
+  margin: 20px 0;
+  word-wrap: break-word;
+}
+
+.meaning {
+  margin: 20px 0;
+  list-style: none;
+  margin-left: 0;
+  /* border: 1px dotted #ccc; */
+  /* padding: 10px; */
+  text-align: left;
+  font-size: 20px;
+  font-weight: semibold;
+}
+
+audio {
+  margin: 20px auto;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.read_more_link {
+  text-decoration: underline;
+  color: #fff;
+  padding: 10px 20px;
+  text-underline-offset: 0.125rem;
+}
+.read_more_link:is(:hover, :focus, :active) {
+  color: purple;
+}
+
+.input {
+  height: 53px;
+  width: calc(100% - 20%);
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.4);
+  font-size: 16px;
+  padding: 0 42px;
+  border-radius: 5px;
+}
+
+.meaning-container {
+  display: none;
+}
