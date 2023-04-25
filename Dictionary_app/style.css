@@ -15,12 +15,16 @@ body {
   border-radius: 7px;
   border: 1px solid #ccc;
   box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.1);
-  width: 90%;
+  width: min(90%, 450px);
   margin: 10px;
   max-width: 450px;
   text-align: center;
   font-size: 18px;
   font-weight: 500;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .heading {
@@ -77,13 +81,14 @@ audio {
 
 .input {
   height: 53px;
-  width: calc(100% - 20%);
+  width: calc(100% - 25%);
   text-align: center;
   background-color: rgba(255, 255, 255, 0.6);
   border-color: rgba(255, 255, 255, 0.4);
   font-size: 16px;
   padding: 0 42px;
   border-radius: 5px;
+  margin-inline: auto;
 }
 
 .meaning-container {
