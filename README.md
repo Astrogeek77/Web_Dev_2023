@@ -23,6 +23,6 @@
 | 18  |       [Parallax Depth Cards](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/Parallax-depth-cards)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/Parallax-depth-cards/)
 | 19  |       [Flip Cards](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/Flip_Cards)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/Flip_Cards/)
 | 20  |       [English Dictionary](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/Dictionary_app)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/Dictionary_app/)
-| 20  |       [Responsive Table Design](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/Responsive_Table_design)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/Responsive_Table_design/)
-
+| 21  |       [Responsive Table Design](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/Responsive_Table_design)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/Responsive_Table_design/)
+| 22  |       [Image Slider](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/Image_Slider)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/Image_Slider/)
 
