@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /*   text-align: center; */
+  font-size: 1.5rem;
+}
+
+.wrapper {
+  width: min(90%, 500px);
+  margin: 2rem auto;
+  margin-bottom: 30rem;
+}
+
+.wrapper div {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 2rem 0;
+  position: relative;
+}
+
+/* .wrapper div > * {
+  outline: 5px solid red;
+} */
+
+.wrapper h2 {
+  height: min-content;
+  position: sticky;
+  top: 1rem;
+}
