@@ -25,4 +25,5 @@
 | 20  |       [English Dictionary](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/Dictionary_app)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/Dictionary_app/)
 | 21  |       [Responsive Table Design](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/Responsive_Table_design)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/Responsive_Table_design/)
 | 22  |       [Image Slider](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/Image_Slider)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/Image_Slider/)
+| 23  |       [Random Choice Selector](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/random-choice-selector)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/random-choice-selector/)
 
