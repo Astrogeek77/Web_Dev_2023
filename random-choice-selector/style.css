@@ -24,7 +24,7 @@ h3 {
 }
 
 .container {
-  width: 500px;
+  width: min(90%, 500px);
 }
 
 textarea {
@@ -40,6 +40,11 @@ textarea {
 
 textarea:focus {
   outline: 0;
+}
+
+.tags {
+  width: min(90%, 600px);
+  padding: 1rem;
 }
 
 .tag {
