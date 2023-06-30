@@ -56,3 +56,34 @@
   color: white;
   /* font-size: 30px; */
 }
+
+@media (max-width: 600px) {
+  html {
+    padding-bottom: 50px;
+  }
+
+  .side-links {
+    /* bottom: 0;
+    left: 0;
+    right: auto;
+    top: auto; */
+    inset: auto auto 0 0;
+
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+    padding: 10px 0;
+
+    background-color: #000a;
+  }
+
+  .side-link {
+    align-self: center;
+    margin-bottom: 0;
+  }
+}
