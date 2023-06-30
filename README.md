@@ -28,6 +28,7 @@
 | 23  |       [Random Choice Selector](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/random-choice-selector)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/random-choice-selector/)
 | 23  |       [Drink Water](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/Drink_Water_Reminder)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/Drink_Water_Reminder/)
 | 24  |       [Sticky Heading](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/Sticky_Heading)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/Sticky_Heading/)
+| 25  |       [Progressively Enhanced Tabs](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/accessible_tabs)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/accessible_tabs/)
 
 
 
