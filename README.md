@@ -29,6 +29,7 @@
 | 24  |       [Drink Water](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/Drink_Water_Reminder)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/Drink_Water_Reminder/)
 | 25  |       [Sticky Heading](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/Sticky_Heading)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/Sticky_Heading/)
 | 26  |       [Progressively Enhanced Tabs](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/accessible_tabs)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/accessible_tabs/)
+| 27  |       [Directionally Aware Hover Effects](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/directionally_aware_hover_effects)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/directionally_aware_hover_effects/)
 
 
 

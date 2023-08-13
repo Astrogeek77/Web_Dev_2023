@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap');
+body {
+  background: #333;
+  display: grid;
+  place-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding-inline: 2rem;
+  font-family: Roboto, sans-serif;
+}
+
+nav ul {
+  font-size: 2em;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* Effect Code */
+nav ul {
+  --_gap: 2rem;
+}
+
+nav ul li {
+  --_delay: 300ms;
+  --_delay-2: 200ms;
+  overflow: hidden;
+  position: relative;
+  padding: calc(var(--_gap) / 2);
+}
+
+nav ul li::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: cyan;
+  height: 3px;
+  translate: var(--_translate, 0);
+  scale: var(--_width, 0) 1;
+  transition: scale var(--_delay, 300ms) var(--_scale_delay, 0ms),
+    translate calc(var(--_delay, 300ms) + var(--_delay-2, 200ms))
+      var(--_translate_delay, 0ms);
+}
+
+nav ul li:hover {
+  --_width: 1;
+}
+
+@supports selector(:has(hi)) {
+  nav ul li:hover + li {
+    --_translate: -100%;
+    --_scale_delay: var(--_delay, 300ms);
+    --_translate_delay: var(--_delay-2, 200ms);
+  }
+
+  nav ul li:has(+ :hover) {
+    --_translate: 100%;
+    --_scale_delay: var(--_delay, 300ms);
+    --_translate_delay: var(--_delay-2, 200ms);
+  }
+}
+/* Effect Code */
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.7;
+  position: relative;
+}
+
+nav ul li a:is(:hover, :focus-visible) {
+  opacity: 1;
+}
