@@ -1,0 +1,105 @@
+!<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="../side-links.css">
+    </head>
+    <body>
+       <div class="wrapper">
+        <div class="channel-info">
+            <img class="channel-info__img" src="https://avatars.githubusercontent.com/u/54165628?v=4" alt="" />
+            <div class="channel-info__details">
+            <h2 id="channel-name">Gautam Jain</h2>
+            <div class=channel-info__meta>
+                <span>@Astrogeek77</span>
+                <span>60 Followers</span>
+                <span>110 Stars</span>
+            </div>
+            <p>Making accessible and cool web projects.</p>
+            </div>
+        </div>
+
+        <div role="tablist" aria-labelledby="channel-name">
+            <button id="tab-1" role="tab" aria-controls="tabPanel-1" aria-selected="true" tabindex="0">Home
+            </button>
+            <button id="tab-2" role="tab" aria-controls="tabPanel-2" aria-selected="false" tabindex="-1">Snippets
+            </button>
+            <button id="tab-3" role="tab" aria-controls="tabPanel-3" aria-selected="false" tabindex="-1">Projects
+            </button>
+            <button id="tab-4" role="tab" aria-controls="tabPanel-4" aria-selected="false" tabindex="-1">Gists
+            </button>
+            <button id="tab-5" role="tab" aria-controls="tabPanel-5" aria-selected="false" tabindex="-1">Practice
+            </button>
+            <button id="tab-6" role="tab" aria-controls="tabPanel-6" aria-selected="false" tabindex="-1">Collections
+            </button>
+            <button id="tab-7" role="tab" aria-controls="tabPanel-7" aria-selected="false" tabindex="-1">About
+            </button>
+        </div>
+        <div class="tab-panels">
+            <div id="tabPanel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
+            <p>My intro and some currated false content</p>
+            </div>
+
+            <div id="tabPanel-2" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-2">
+            <p>My hundreds of lines of code, all right here</p>
+            </div>
+
+            <div id="tabPanel-3" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-3">
+            <p>A lot of projects, all under open sourced</p>
+            </div>
+
+            <div id="tabPanel-4" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-4">
+            <p>Some cool sub-parts of code.</p>
+            </div>
+
+            <div id="tabPanel-5" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-5">
+            <p>Practice new, cool, burning technologies</p>
+            </div>
+
+            <div id="tabPanel-6" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-6">
+            <p>Collection of art peices</p>
+            </div>
+
+            <div id="tabPanel-7" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-7">
+            <p>About me</p>
+            </div>
+        </div>
+        </div>
+        </div>
+
+         <!-- Side Links Only -->
+    <div class="side-links">
+      <a
+        href="https://icodergautam-portfolio.netlify.app"
+        target="_blank"
+        class="side-link side-link-website"
+      >
+        <i class="fab fa-website-square side-link-icon"></i>
+        <span class="side-link-text">View Website</span>
+      </a>
+      <a
+        href="https://github.com/astrogeek77"
+        target="_blank"
+        class="side-link side-link-github side-link-icon"
+      >
+        <i class="fab fa-github-square"></i>
+        <span class="side-link-text">View GitHub</span>
+      </a>
+      <a
+        href="https://linkedin.com/in/astrogeek77"
+        target="_blank"
+        class="side-link side-link-linkedin"
+      >
+        <i class="fab fa-linkedin-square side-link-icon"></i>
+        <span class="side-link-text">View Linkedin</span>
+      </a>
+    </div>
+        
+        <script src="app.js" async defer></script>
+    </body>
+</html>
