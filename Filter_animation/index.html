@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Filter Animation using ViewTransition</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="content-grid">
+      <header class="primary-header full-width">
+        <div class="primary-header__layout">
+          <nav class="primary-navigation">
+            <ul>
+              <li><a href="#">Discover</a></li>
+              <li><a href="#">Live</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a aria-current="page" href="#">Conferences</a></li>
+            </ul>
+          </nav>
+
+          <!-- <div class="account-links">
+            <a href="#">Log In</a>
+            <a href="#" class="create-account">Get Started</a>
+          </div> -->
+        </div>
+      </header>
+      <nav aria-label="Breadcrumb" class="breadcrumbs">
+        <ol>
+          <li><a href="#">Conferences</a></li>
+          <li><a href="#" aria-current="page">Tech</a></li>
+        </ol>
+      </nav>
+      <main class="main-with-aside">
+        <div class="flow">
+          <h1>Tech Conferences</h1>
+          <div class="filter">
+            <h2 class="visually-hidden">Filter by type of conference</h2>
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+            <button class="filter-btn" data-filter="backend">Backend</button>
+            <button class="filter-btn" data-filter="fullstack">
+              Fullstack
+            </button>
+          </div>
+
+          <ul class="conference-list">
+            <li class="conference" data-category="fullstack">
+              <div class="conference-details">
+                <span class="conference-date">January 30th - February 1st</span>
+                <span class="conference-category">Fullstack</span>
+              </div>
+              <h2 class="conference-name">THAT Conference Texas</h2>
+            </li>
+
+            <li class="conference" data-category="fullstack">
+              <div class="conference-details">
+                <span class="conference-date">February 29th - March 1st</span>
+                <span class="conference-category">Fullstack</span>
+              </div>
+              <h2 class="conference-name">DEVWorld</h2>
+            </li>
+
+            <li class="conference" data-category="backend">
+              <div class="conference-details">
+                <span class="conference-date">March 19th - March 23rd</span>
+                <span class="conference-category">Backend</span>
+              </div>
+              <h2 class="conference-name">SQLBits</h2>
+            </li>
+
+            <li class="conference" data-category="frontend">
+              <div class="conference-details">
+                <span class="conference-date">June 6th - June 7th</span>
+                <span class="conference-category">Frontend</span>
+              </div>
+              <h2 class="conference-name">CSS Day</h2>
+            </li>
+
+            <li class="conference" data-category="frontend">
+              <div class="conference-details">
+                <span class="conference-date"
+                  >September 9th - September 11th</span
+                >
+                <span class="conference-category">Frontend</span>
+              </div>
+              <h2 class="conference-name">SmashingConf Freiburg</h2>
+            </li>
+          </ul>
+        </div>
+        <aside class="sidebar flow">
+          <h3>Discover</h3>
+          <div>
+            <h4>Lorem, ipsum dolor.</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              nihil modi at?
+            </p>
+          </div>
+          <div>
+            <h4>Aperiam, minima debitis!</h4>
+            <p>
+              Perferendis unde possimus temporibus quia dolorem quibusdam ullam
+              excepturi! Pariatur, saepe totam!
+            </p>
+          </div>
+          <div>
+            <h4>Error, incidunt ab?</h4>
+            <p>
+              Asperiores deleniti eum quos consectetur non eveniet error
+              doloribus veniam dolores omnis.
+            </p>
+          </div>
+          <div>
+            <h4>Perspiciatis, nesciunt amet.</h4>
+            <p>
+              Ex impedit et molestias magni modi numquam doloremque repellat
+              necessitatibus expedita porro?
+            </p>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <script src="../side-links.js" defer></script>
+    <!-- Side Links -->
+    <sidelinks-component></sidelinks-component>
+    <script src="script.js" async defer></script>
+  </body>
+</html>
