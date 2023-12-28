@@ -34,5 +34,6 @@
 | 29  |       [Youtube Tabs Clone](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/Youtube_Tabs_Clone)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/Youtube_Tabs_Clone/)
 | 30  |       [Undertaker WM Streak Table](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/UnderTaker_Streak_Table)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/UnderTaker_Streak_Table/)
 | 31  |       [Filter Blend Effect (viewTransition)](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/Filter_animation)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/Filter_animation/)
+| 32  |       [Cool Text Effect](https://github.com/Astrogeek77/Web_Dev_2023/tree/main/cool-text-effect)       | [demo](https://astrogeek77.github.io/Web_Dev_2023/cool-text-effect/)
 
 
